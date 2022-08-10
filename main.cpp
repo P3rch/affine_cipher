@@ -1,19 +1,22 @@
 #include <iostream>
 #include <fstream>
+#include "cipher.h"
 
 using namespace std;
 
 int main(){
-    cout << "Hello" << endl;
-
     string text;
-    ifstream Input("text.txt");
+    ifstream Input("to_cipher.txt");
+    ofstream Output("ciphered.txt");
+
     while (getline (Input, text)) {
-        cout << text;
+        Output << cipher(text);
     }
 
-    ofstream Output("cipher.txt");
-    Output << "Wrote to a file";
+    Input.close();
     Output.close();
 
+    // TODO: Error handling
+
+    return 0;
 }
