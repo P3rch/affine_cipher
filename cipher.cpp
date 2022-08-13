@@ -3,13 +3,12 @@
 
 using namespace std;
 
-const int a = 7;
-const int b = -11;
+extern int a, b;
 
 string cipher(string text) {
     int len = text.length();
     string cipher = "";
-
+    
     for(int i = 0; i < len; i++) {
         char character = text[i];
         /* Applying encryption formula (a*x+b) mod m:
