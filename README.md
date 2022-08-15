@@ -37,7 +37,7 @@ File "to_decipher.txt" not found - nothing to decipher.
 
 The ciphered text is now in the "ciphered.txt" file.
 
-**WARNING!** This program will overwrite "ciphered.txt" or "deciphered.txt" (for encryption) after every successful operation.
+**WARNING!** This program will overwrite "ciphered.txt" or "deciphered.txt" (for decryption) after every successful operation.
 
 ## Decryption
 
