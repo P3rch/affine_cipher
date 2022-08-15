@@ -28,7 +28,7 @@ TBD
 
 Depending on existence of files, you will get a confirmation of success or information that the file was not found.
 
-For example, if the aim was only to cipher the plaintext , the output would be:
+For example, if the aim was only to cipher the plaintext, the output would be:
 ```
 Ciphering in progress...
 	Saved to "ciphered.txt".
