@@ -78,6 +78,6 @@ to cipher.
 TBD
 
 ## Further improvements
-* Divide the text into n-character long tokens and encrypt them with different ``a`` and ``b`` parameters to prevent the dictionary attack.
+* Divide the text into n-character long tokens and encrypt them with different ``a`` and ``b`` parameters to prevent the [dictionary attack](https://en.wikipedia.org/wiki/Dictionary_attack).
 * Define keys in another file, so that the user could set his keys and change them regularly. (The more encrypted text the attacker gets, the higher is the probability of breaking the cipher.)
 * Create new files after successful (de)cryption instead of overwriting the existing ones.
