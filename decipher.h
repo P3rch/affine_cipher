@@ -1,5 +1,3 @@
 #include <string>
 
-using namespace std;
-
-string decipher(string);
+std::string decipher(std::string);

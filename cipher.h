@@ -1,5 +1,3 @@
 #include <string>
 
-using namespace std;
-
-string cipher(string);
+std::string cipher(std::string);
