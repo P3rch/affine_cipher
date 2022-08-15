@@ -9,26 +9,21 @@ The program has been developed on Linux Ubuntu 20.04.
 
 1. Open the "to_cipher.txt" file and paste there your plain text (or simply rename your file to "to_cipher.txt" if you have one).
 2. Save the file.
-
-### Linux
-
 3. Open the terminal in the main directory.
-4. Build the solution with
-
+4. Build the solution e.g. with GNU g++ compiler:
 ```
 $ g++ -o main main.cpp cipher.cpp decipher.cpp
 ```
-5. Execute the solution with
+5. Execute the solution on Linux with
 ```
-./main
+$ ./main
+```
+or on Windows with
+```
+> main
 ```
 
-### Windows
-TBD
-
-Depending on existence of files, you will get a confirmation of success or information that the file was not found.
-
-For example, if the aim was only to cipher the plaintext, the output would be:
+Depending on existence of files, you will get a confirmation of success or information that the file was not found. For example, if the aim was only to cipher the plaintext, the output would be:
 ```
 Ciphering in progress...
 	Saved to "ciphered.txt".
