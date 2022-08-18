@@ -12,15 +12,15 @@ The program has been developed on Linux Ubuntu 20.04.
 3. Open the terminal in the main directory.
 4. Build the solution e.g. with GNU g++ compiler:
 ```
-$ g++ -o main main.cpp cipher.cpp decipher.cpp
+g++ -o main main.cpp cipher.cpp decipher.cpp
 ```
 5. Execute the solution on Linux with
 ```
-$ ./main
+./main
 ```
 or on Windows with
 ```
-> main
+main
 ```
 
 Depending on existence of files, you will get a confirmation of success or information that the file was not found. For example, if the aim was only to cipher the plaintext, the output would be:
@@ -30,7 +30,7 @@ Ciphering in progress...
 File "to_decipher.txt" not found - nothing to decipher.
 ```
 
-The ciphered text is now in the "ciphered.txt" file.
+The ciphered text is now inside the "ciphered.txt" file.
 
 **WARNING!** This program will overwrite "ciphered.txt" or "deciphered.txt" (for decryption) after every successful operation.
 
@@ -38,7 +38,7 @@ The ciphered text is now in the "ciphered.txt" file.
 
 Paste the cipher or rename your file to "to_decipher.txt" and follow the **Encryption** steps provided above.
 
-The deciphered text will be in the "deciphered.txt" file.
+The deciphered text will be inside the "deciphered.txt" file.
 
 ## Example of a cipher
 
