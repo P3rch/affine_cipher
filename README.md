@@ -1,7 +1,7 @@
 ## Introduction
 This is a simple program to cipher a plain text and decipher encrypted text.
 
-Affine cipher uses the modular function ``y = (a*x) + b mod 26`` to cipher every character of the text and ``y = a^(-1) * (x - b) mod 26`` to decipher them. Further descripton of the algorithm can be find on [Wikipedia](https://en.wikipedia.org/wiki/Affine_cipher).
+Affine cipher uses the modular function ``y = (a*x) + b mod 26`` to cipher every character of the text and ``y = a^(-1) * (x - b) mod 26`` to decipher them. Further descripton of the algorithm can be found on [Wikipedia](https://en.wikipedia.org/wiki/Affine_cipher).
 
 The program has been developed on Linux Ubuntu 20.04.
 
