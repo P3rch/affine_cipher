@@ -3,10 +3,10 @@ This is a simple program to cipher a plain text and decipher encrypted text.
 
 Affine cipher uses the modular function ``y = (a*x) + b mod 26`` to cipher every character of the text and ``y = a^(-1) * (x - b) mod 26`` to decipher them. Further descripton of the algorithm can be found on [Wikipedia](https://en.wikipedia.org/wiki/Affine_cipher).
 
-The program has been developed on Linux Ubuntu 20.04.
+The program has been developed on Linux Ubuntu 20.04. and extended on Arch Linux(as of 26/10/22)
 
 ## Encryption
-
+0. Provide keys in keys.txt file, separete by enter. 
 1. Open the "to_cipher.txt" file and paste there your plain text (or simply rename your file to "to_cipher.txt" if you have one).
 2. Save the file.
 3. Open the terminal in the main directory.
@@ -32,7 +32,8 @@ File "to_decipher.txt" not found - nothing to decipher.
 
 The ciphered text is now inside the "ciphered.txt" file.
 
-**WARNING!** This program will overwrite "ciphered.txt" or "deciphered.txt" (for decryption) after every successful operation.
+**WARNING!** This program will not overwrite "ciphered.txt" or "deciphered.txt" (for decryption) after every successful operation,
+it will write at the end of the file instead
 
 ## Decryption
 
@@ -79,5 +80,5 @@ TBD
 
 ## Further improvements
 * Divide the text into n-character long tokens and encrypt them with different ``a`` and ``b`` parameters to prevent the [dictionary attack](https://en.wikipedia.org/wiki/Dictionary_attack).
-* Define keys in another file, so that the user could set his keys and change them regularly. (The more encrypted text the attacker gets, the higher is the probability of breaking the cipher.)
-* Create new files after successful (de)cryption instead of overwriting the existing ones.
+*Reconsider writing results into a new file or at least add some kind of separator between results maybe timestamp.
+*sanitize inputs especially keys.txt

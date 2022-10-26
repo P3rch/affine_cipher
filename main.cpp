@@ -1,11 +1,11 @@
 #include <iostream>
-#include <fstream>
+#include <fstream> 
 #include "cipher.h"
 #include "decipher.h"
 
 using namespace std;
 
-extern const int a = 7, b = 11;
+int a, b;
 
 bool file_exists(const char *fileName) {
     ifstream File(fileName);
@@ -13,12 +13,21 @@ bool file_exists(const char *fileName) {
 }
 
 int main(){
-    string text = "";
+    
+    string text = "", ciphered = "ciphered.txt", deciphered = "deciphered.txt";    
+    if (file_exists("keys.txt") != 0) {
+    	ifstream key("keys.txt");
+    	while (key >> a >> b);
+    }
+    else {
+        cout << "File \"keys.txt\" not found ";
+        cout << "- no keys provided." << endl;
+	return 1;
+    }
 
     if (file_exists("to_cipher.txt") != 0) {
         ifstream TextIn("to_cipher.txt");
-        ofstream CipherOut("ciphered.txt");
-
+        ofstream CipherOut(ciphered,ofstream::app);
         cout << "Ciphering in progress..." << endl;
         while (getline (TextIn, text)) {
             CipherOut << cipher(text) << endl;
@@ -35,8 +44,7 @@ int main(){
 
     if (file_exists("to_decipher.txt")) {
         ifstream CipherIn("to_decipher.txt");
-        ofstream TextOut("deciphered.txt");
-
+        ofstream TextOut(deciphered,ofstream::app);
         cout << "Deciphering in progress..." << endl;
         while (getline (CipherIn, text)) {
             TextOut << decipher(text) << endl;
