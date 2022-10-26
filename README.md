@@ -80,5 +80,5 @@ TBD
 
 ## Further improvements
 * Divide the text into n-character long tokens and encrypt them with different ``a`` and ``b`` parameters to prevent the [dictionary attack](https://en.wikipedia.org/wiki/Dictionary_attack).
-*Reconsider writing results into a new file or at least add some kind of separator between results maybe timestamp.
-*sanitize inputs especially keys.txt
+* Reconsider writing results into a new file or at least add some kind of separator between results maybe timestamp.
+* sanitize inputs especially keys.txt.
